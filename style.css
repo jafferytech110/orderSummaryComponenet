@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+:root{
+    --background: hsl(225, 100%, 94%);
+}
+
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    width: 400px;
+    max-width: 500px;
+    background-color: transparent;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.container div.header img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+
+.container h1{
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+.container p{
+    font-size: 0.7rem;
+    color: rgb(113, 146, 163);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.order .center{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    max-width: 300px;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.order .center .mid h2{
+    font-size: 1rem;
+    padding-bottom:0;
+    margin-bottom: 0;
+}
+
+.order .center .mid span{
+    font-size: 0.7rem;
+    color: rgb(113, 146, 163);
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.together{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.together img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+a{
+    color: #CD7DF3;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.buttons #submit{
+    padding: 0.6rem;
+    background-color:#1E1FCD;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.buttons #cancel{
+    padding: 0.6rem;
+    background-color:rgb(241, 241, 241);
+    color: #1E1FCD;
+    border: none;
+    border-radius: 10px;
+}
+
+div.footer{
+    padding: 5px;
+    color: rgb(113, 146, 163);
+}
+
+div.footer a{
+    color: #CD7DF3;
+}
+
+@media screen and (max-width:400px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        width: auto;
+        max-width: 400px;
+        background-color: transparent;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    .order .center{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        max-width: 300px;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+}
